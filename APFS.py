@@ -1,4 +1,7 @@
 import pandas as pd
+import streamlit as st
+
+st.write("# DHS APFS Weekly Update")
 
 def get_data():
     old_link = "https://raw.githubusercontent.com/musabbirsaeed/DHSAPFS/main/Public_old.csv"
@@ -28,8 +31,10 @@ def find_dif():
 
 added, dropped = find_dif()
 
-print(added)
+st.write("Recently added")
+st.write(added)
 
-print("++++++++++++++++++++++++++++++++++++++++++++++")
+st.write("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
-print(dropped)
+st.write("Recently dropped")
+st.write(dropped)
