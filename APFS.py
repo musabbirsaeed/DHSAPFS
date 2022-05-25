@@ -36,10 +36,10 @@ added, dropped = find_dif()
 
 st.write("Recently added")
 
-AgGrid(added, enable_enterprise_modules = True, height = 1000)
+AgGrid(added, enable_enterprise_modules = True, height = 800)
 
 st.write("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 st.write("Recently dropped")
 
-AgGrid(dropped, enable_enterprise_modules = True, height = 1000)
+AgGrid(dropped, enable_enterprise_modules = True, height = 800)
