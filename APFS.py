@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+from st_aggrid import AgGrid
 
 st.write("# DHS APFS Weekly Update")
 
@@ -32,9 +33,11 @@ def find_dif():
 added, dropped = find_dif()
 
 st.write("Recently added")
-st.write(added)
+
+AgGrid(added, enable_enterprise_modules = True)
 
 st.write("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 st.write("Recently dropped")
-st.write(dropped)
+
+AgGrid(dropped, enable_enterprise_modules = True)
