@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 from st_aggrid import AgGrid
 
+st.set_page_config(layout="wide")
+
 st.write("# DHS APFS Weekly Update")
 
 def get_data():
